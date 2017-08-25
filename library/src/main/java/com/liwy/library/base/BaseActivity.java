@@ -270,4 +270,19 @@ public abstract class BaseActivity extends AppCompatActivity {
     public interface OnRightClickListener{
         public void onRightClick();
     }
+
+    // 判断Intent的Bundle里是否具有某个key-value键值对
+    public boolean isIntentHasKey(String key){
+        if (getIntent() != null && getIntent().hasExtra(key)){
+            return  true;
+        }
+        return false;
+    }
+    public boolean isBundleHasKey(String key){
+        if (getIntent() != null && getIntent().getExtras() != null && getIntent().getExtras().containsKey(key)){
+            return  true;
+        }
+        return false;
+    }
+
 }
