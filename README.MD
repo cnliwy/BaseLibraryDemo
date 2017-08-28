@@ -1,7 +1,7 @@
 ## 工程结构
 工程包括common、library、app三个module,启动common、library为android moudle基础类库。app为项目的主工程目录。
 1. common是基础类库，提供工具、服务、自定义控件、网络请求封装等基础服务。任何项目可直接依赖。
-2. library依赖common，是根据项目需要所封装的一些基础服务，移植较为麻烦。
+2. library依赖common，是根据当前项目需要所封装或提供的一些基础服务，移植较为麻烦。
 3. app为项目的主工程目录。
 ### 一、common基础组件
 common所依赖库如下：
