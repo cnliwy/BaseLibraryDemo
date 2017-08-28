@@ -7,7 +7,7 @@
 common所依赖库如下：
  1. compile 'com.jakewharton:butterknife:8.5.1' Butterknife注入框架
  2. compile 'com.yanzhenjie:permission:1.1.0'   AndPermission权限框架
- 3. compile 'com.liwy.easyhttp:easyhttp:1.0.7'  EasyHttp 网络请求框架
+ 3. compile 'com.liwy.easyhttp:easyhttp:1.0.8'  EasyHttp 网络请求框架
  4. compile 'com.orhanobut:logger:1.15'         Logger 日志框架
  5. compile 'org.greenrobot:eventbus:3.0.0'     EventBus 事件总线
  6. compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.27'   万能RecyclerView Adapter
