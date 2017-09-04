@@ -34,6 +34,15 @@ public class BasePresenter<V extends IView> implements IPresenter {
         this.mView.initView();
     }
 
+    /**
+     * 判断mView是否为空
+     * @return
+     */
+    public boolean isViewEmpty(){
+        if (mView != null)return false;
+        return true;
+    }
+
     public Context getContext() {
         return mContext;
     }

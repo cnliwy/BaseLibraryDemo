@@ -55,5 +55,6 @@ public abstract class BaseMvpActivity<T extends BasePresenter> extends BaseActiv
     protected void onDestroy() {
         super.onDestroy();
         mPresenter.clearMemory();
+        mPresenter = null;
     }
 }
