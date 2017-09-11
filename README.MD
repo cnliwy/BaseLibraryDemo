@@ -12,7 +12,7 @@
  5. compile 'org.greenrobot:eventbus:3.0.0'     EventBus 事件总线
  6. compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.27'   万能RecyclerView Adapter
  7. testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'  内存泄漏检测框架
- 8. compile 'io.reactivex.rxjava2:rxjava:2.1.3'
+ 8. compile 'io.reactivex.rxjava2:rxjava:2.1.3' Rxjava
 #### common提供：
 1. Utils工具类
 ```
@@ -34,3 +34,10 @@
 ### 二、library 业务基础库
 1. Base基类
 2. MVP模式基类
+
+
+### MVP模板
+在app目录下有library专用.rar的文件，解压文件。
+1. 将MVPActivity2放至：C:\Program Files\Android\Android Studio\plugins\android\lib\templates\activities
+2. 将MVPFragment2放至：C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
+放至对应的androidstudio安装目录里。
