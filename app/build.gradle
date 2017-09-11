@@ -10,6 +10,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //开启jack编译
+        jackOptions {
+            enabled true
+        }
+        //将编译选项设置为Java1.8
+        compileOptions {
+            targetCompatibility 1.8
+            sourceCompatibility 1.8
+        }
     }
     buildTypes {
         release {

@@ -6,11 +6,11 @@ import android.content.Context;
  * Created by liwy on 2017/8/17.
  */
 
-public class Utils {
+public class BaseUtils {
     private static Context context;
 
-    private Utils() {
-        throw new UnsupportedOperationException("Utils can't instantiate with none parameter...");
+    private BaseUtils() {
+        throw new UnsupportedOperationException("BaseUtils can't instantiate with none parameter...");
     }
 
     /**
@@ -19,7 +19,7 @@ public class Utils {
      * @param context 上下文
      */
     public static void init(Context context) {
-        Utils.context = context.getApplicationContext();
+        BaseUtils.context = context.getApplicationContext();
     }
 
     /**
@@ -29,6 +29,6 @@ public class Utils {
      */
     public static Context getContext() {
         if (context != null) return context;
-        throw new NullPointerException("Utils should init first");
+        throw new NullPointerException("BaseUtils should init first");
     }
 }

@@ -3,8 +3,8 @@ package com.liwy.easylibrarydemo;
 import android.app.Activity;
 import android.app.Application;
 
+import com.liwy.common.utils.BaseUtils;
 import com.liwy.common.utils.ToastUtils;
-import com.liwy.common.utils.Utils;
 import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
 import com.umeng.analytics.MobclickAgent;
@@ -24,7 +24,7 @@ public class EasyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Logger.init("暮醉南山");
-        Utils.init(getApplicationContext());// 初始化全局context
+        BaseUtils.init(getApplicationContext());// 初始化全局context
         ToastUtils.init(false);// 重复吐司只修改文本内容
         easyApplication = this;
         // 初始化友盟统计
