@@ -46,7 +46,7 @@
 ### 框架说明：
 1. 采用JDK1.8编译，支持lambda表达式
 2. 原网络请求模式retrofit+okhttp改为EasyHttp
-3. 取消MVP模式中presenter对activity或fragment的代理功能
+3. 取消MVP模式中presenter对activity或fragment的代理功能，优化模板及创建方式。
 4. 原RxBus更改为EventBus
 5. 列表控件采用RecycleView + BaseRecyclerViewAdapterHelper进行拓展实现
 6. 项目里用的第三方库均在github
