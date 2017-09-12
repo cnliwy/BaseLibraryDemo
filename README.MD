@@ -49,3 +49,4 @@
 3. 取消MVP模式中presenter对activity或fragment的代理功能
 4. 原RxBus更改为EventBus
 5. 列表控件采用RecycleView + BaseRecyclerViewAdapterHelper进行拓展实现
+6. 项目里用的第三方库均在github
