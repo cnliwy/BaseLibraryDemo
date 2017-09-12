@@ -45,20 +45,15 @@ public class MainActivity extends BaseActivity {
     public void initEasyIndicator(){
         TabConfig tabConfig = new TabConfig.Builder().setTextColorNor(R.color.white).setTextSize(15).setTextColorSel(R.color.colorPrimary).setDistance(8).setShowLine(false).builder();
         List<TabBean> tabs = new ArrayList<TabBean>();
-        TabBean t1 = new TabBean("阿里");
-        TabBean t2 = new TabBean("腾讯");
-        TabBean t3 = new TabBean("百度");
+        TabBean t1 = new TabBean("测试1");
+        TabBean t2 = new TabBean("测试2");
+        TabBean t3 = new TabBean("测试3");
         tabs.add(t1);
         tabs.add(t2);
         tabs.add(t3);
         indicator.setConfig(tabConfig);
         indicator.setTabs(tabs);// 如果不需绑定fragment,可单独传入tabs，如需绑定，可传入viewpager和tabs
-        indicator.setOnTabClickListener(new OnTabClickListener() {
-            @Override
-            public void onClick(TabView v) {
-                ToastUtils.showShortToast("hello world");
-            }
-        });
+        indicator.setOnTabClickListener(v -> ToastUtils.showShortToast("hello world"));
     }
 
     public void initAdapter(){

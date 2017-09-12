@@ -1,8 +1,8 @@
 ## 工程结构
 工程包括common、library、app三个module,启动common、library为android moudle基础类库。app为项目的主工程目录。
-1. common是基础类库，提供工具、服务、自定义控件、网络请求封装等基础服务。任何项目可直接依赖。
-2. library依赖common，是根据当前项目需要所封装或提供的一些基础服务，移植较为麻烦。
-3. app为项目的主工程目录。
+1. common是基础类库，提供工具、服务、自定义控件、网络请求封装等基础服务。任何项目可直接依赖。移植时内容基本保持不变。
+2. library依赖common，是根据当前项目普遍需要所封装或提供的一些基础的功能，会根据不同项目进行轻微调整。
+3. app为项目的主工程目录，主要用于业务实现。
 ### 一、common基础组件
 #### common所依赖库如下：
  1. compile 'com.jakewharton:butterknife:8.5.1' Butterknife注入框架
@@ -41,3 +41,11 @@
 1. 将MVPActivity2放至：C:\Program Files\Android\Android Studio\plugins\android\lib\templates\activities
 2. 将MVPFragment2放至：C:\Program Files\Android\Android Studio\plugins\android\lib\templates\other
 放至对应的androidstudio安装目录里。
+
+
+### 框架说明：
+1. 采用JDK1.8编译，支持lambda表达式
+2. 原网络请求模式retrofit+okhttp改为EasyHttp
+3. 取消MVP模式中presenter对activity或fragment的代理功能
+4. 原RxBus更改为EventBus
+5. 列表控件采用RecycleView + BaseRecyclerViewAdapterHelper进行拓展实现
