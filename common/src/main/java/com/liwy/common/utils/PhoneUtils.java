@@ -2,6 +2,7 @@ package com.liwy.common.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
@@ -157,12 +158,33 @@ public class PhoneUtils {
     }
 
     /**
+     * 获取manifests里的meta信息
+     * @param context
+     * @param key
+     * @return
+     */
+    public static String getMetaData(Context context,String key) {
+        try {
+            ApplicationInfo ai = context.getPackageManager().getApplicationInfo(
+                    context.getPackageName(), PackageManager.GET_META_DATA);
+            Object value = ai.metaData.get(key);
+            if (value != null) {
+                return value.toString();
+            }
+        } catch (Exception e) {
+
+        }
+        return null;
+    }
+
+
+    /**
      * 将得到的int类型的IP转换为String类型
      *
      * @param ip
      * @return
      */
-    public static String intIP2StringIP(int ip) {
+    private static String intIP2StringIP(int ip) {
         return (ip & 0xFF) + "." +
                 ((ip >> 8) & 0xFF) + "." +
                 ((ip >> 16) & 0xFF) + "." +
