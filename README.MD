@@ -22,6 +22,9 @@
     PhoneUtils 手机信息工具类
     ScreenUtils 尺寸单位计算工具类
     ToastUtils toast工具类
+    EncodeUtils工具类（加密解密）
+    PermissionUtils 权限申请工具类
+    SPUtils sharePreferences存储查询工具类
     *BaseUtils 基础工具类，需提前初始化。
  ```
     
