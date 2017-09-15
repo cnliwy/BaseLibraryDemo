@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="transpant">#00000000</color>
+    <!--背景色、按钮字体颜色-->
+    <color name="c0">#ffffff</color>
+    <!--状态导航栏背景色-->
+    <color name="c1">#f8f8f8</color>
+    <!--背景色-->
+    <color name="c2">#f2f2f2</color>
+    <!--二级分割线-->
+    <color name="c3">#eeeeee</color>
+    <!--分割线-->
+    <color name="c4">#dddddd</color>
+    <!--次文字\标题说明\时间等-->
+    <color name="c5">#999999</color>
+    <!--次文字-->
+    <color name="c6">#666666</color>
+    <!--文字、导航、title1-->
+    <color name="c7">#333333</color>
+    <!--文字、标准蓝、文字高亮-->
+    <color name="c8">#00aaff</color>
+    <!--文字、标准橙、文字高亮-->
+    <color name="c9">#ffab91</color>
+    <!--按钮、选择气泡、文字高亮-->
+    <color name="c10">#fb7e00</color>
+    <!--文字、标准绿-->
+    <color name="c11">#5ed125</color>
+    <!--气泡提示文字、标准红-->
+    <color name="c12">#ff4343</color>
+    <!--分类提示文字-->
+    <color name="c13">#de1e7c</color>
+
 </resources>

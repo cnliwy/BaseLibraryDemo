@@ -1,18 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/c0">
     <TextView
         android:id="@+id/tv_name"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="张三"/>
+        android:textColor="@color/c7"
+        android:text="张三"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button" />
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:text="董事长"/>
-</LinearLayout>
+        android:textColor="@color/c6"
+        android:text="董事长"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/dimen_16"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c5"
+        android:text="2017-09-15 10:12:22"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_title"
+        android:layout_marginRight="@dimen/dimen_16"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@mipmap/ic_launcher_round"
+        android:layout_marginLeft="@dimen/dimen_16"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/c4"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

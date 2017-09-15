@@ -9,12 +9,11 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemClickListener;
 import com.liwy.common.utils.ToastUtils;
 import com.liwy.common.widget.tabindicator.EasyIndicator;
-import com.liwy.common.widget.tabindicator.OnTabClickListener;
 import com.liwy.common.widget.tabindicator.TabBean;
 import com.liwy.common.widget.tabindicator.TabConfig;
-import com.liwy.common.widget.tabindicator.TabView;
 import com.liwy.easylibrarydemo.adapter.MainAdapter;
 import com.liwy.easylibrarydemo.entity.People;
+import com.liwy.easylibrarydemo.ui.TestActivity;
 import com.liwy.library.base.BaseActivity;
 
 import java.util.ArrayList;
@@ -53,7 +52,7 @@ public class MainActivity extends BaseActivity {
         tabs.add(t3);
         indicator.setConfig(tabConfig);
         indicator.setTabs(tabs);// 如果不需绑定fragment,可单独传入tabs，如需绑定，可传入viewpager和tabs
-        indicator.setOnTabClickListener(v -> ToastUtils.showShortToast("hello world"));
+        indicator.setOnTabClickListener(v -> turnToActivity(TestActivity.class));
     }
 
     public void initAdapter(){
@@ -61,6 +60,8 @@ public class MainActivity extends BaseActivity {
         list.add(new People("lisi","CEO"));
         list.add(new People("zhangsan","CTO"));
         list.add(new People("wangwu","boss"));
+        list.add(new People("lilei","developer"));
+        list.add(new People("hanmeimei","developer"));
         MainAdapter adapter = new MainAdapter(R.layout.item_main,list);
         listView.setLayoutManager(new LinearLayoutManager(this));
         listView.setAdapter(adapter);
